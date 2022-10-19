@@ -87,7 +87,7 @@ body {
   bottom: 0;
 }
 
-.contacts .link {
+.contacts__link {
   color: var(--primary-text-color);
   font-weight: 500;
   line-height: 1.14;
@@ -96,8 +96,8 @@ body {
   padding-bottom: 32px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.contacts .link:hover,
-.contacts .link:focus {
+.contacts__link:hover,
+.contacts__link:focus {
   color: var(--accent-color);
 }
 .business {
@@ -120,7 +120,7 @@ body {
   background-size: cover;
 }
 
-.business-title {
+.business__title {
   color: var(--secondary-text-color);
   font-weight: 900;
   font-size: 44px;
@@ -132,7 +132,7 @@ body {
   margin-bottom: 30px;
 }
 
-.button {
+.business__button {
   font-family: inherit;
   cursor: pointer;
   color: var(--secondary-text-color);
@@ -152,8 +152,8 @@ body {
   min-width: 152px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.button:hover,
-.button:focus {
+.business__button:hover,
+.business__button:focus {
   background-color: #188ce8;
 }
 
@@ -335,7 +335,7 @@ p {
   display: flex;
   margin-left: auto;
 }
-.contacts .item + .item {
+.contacts__item + .contacts__item {
   margin-left: 50px;
 }
 .container--nav {
@@ -471,7 +471,7 @@ p {
 }
 
 /* Спрайт */
-.icon {
+.contacts__icon {
   fill: currentColor;
   margin-right: 10px;
 }
@@ -632,12 +632,12 @@ p {
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.icon-comand-button {
+.icon-button__close {
   fill: #000000;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.icon-button:hover .icon-comand-button,
-.icon-button:focus .icon-comand-button {
+.icon-button:hover .icon-button__close,
+.icon-button:focus .icon-button__close {
   fill: var(--accent-color);
 }
 
@@ -757,10 +757,8 @@ p {
 textarea {
   resize: none;
 }
-.form-input-modal.area {
-  min-height: 120px;
-  padding: 12px 16px;
-}
+ 
+
 label {
   display: flex;
   flex-direction: column;
@@ -771,7 +769,7 @@ label {
 .form-modal {
   padding: 40px;
 }
-.form-name {
+.form-modal__name {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
@@ -780,7 +778,7 @@ label {
   color: var(--title-text-color);
   margin-bottom: 12px;
 }
-.form-input-modal {
+.form-modal__input {
   min-width: 448px;
    min-height: 40px; 
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -790,7 +788,7 @@ label {
   padding-left: 42px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.label-text-modal {
+.form-modal__text {
   font-family: inherit;
   font-weight: 400;
   font-size: 12px;
@@ -815,7 +813,11 @@ label {
   margin-bottom: 30px;
   align-items: center;
 }
-.form-input-modal.area::placeholder {
+.area {
+  min-height: 120px;
+  padding: 12px 16px;}
+
+.area::placeholder {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
@@ -849,7 +851,7 @@ label {
 .button-form-modal:focus {
   background-color: #188ce8;
 }
-.icon-label-modal {
+.form-modal__icon {
   fill: var(--title-text-color);
   position: absolute;
   top: 32px;
@@ -857,10 +859,10 @@ label {
   display: inline-block;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form-field-modal:focus-within > .icon-label-modal {
+.form-modal__field:focus-within > .form-modal__icon {
   fill: var(--accent-color);
 }
-.form-input-modal:focus-within {
+.form-modal__input:focus-within {
   border-color: #2196f3;
 }
 .checkbox {
