@@ -16,7 +16,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
   </head>
   <body>
     <header class="header">
@@ -26,9 +27,13 @@
         <!-- Main navigation -->
         <nav>
           <ul class="site-nav list">
-            <li class="site-nav__item"><a href="./index.html" class="link">Студія</a></li>
             <li class="site-nav__item">
-              <a href="./portfolio.html" class="link site-nav__current">Портфоліо</a>
+              <a href="./index.html" class="link">Студія</a>
+            </li>
+            <li class="site-nav__item">
+              <a href="./portfolio.html" class="link site-nav__current"
+                >Портфоліо</a
+              >
             </li>
             <li class="site-nav__item"><a href="" class="link">Контакти</a></li>
           </ul>
@@ -63,7 +68,9 @@
               <button type="button" class="button-list__button">Усі</button>
             </li>
             <li class="button-list__item">
-              <button type="button" class="button-list__button">Веб-сайти</button>
+              <button type="button" class="button-list__button">
+                Веб-сайти
+              </button>
             </li>
             <li class="button-list__item">
               <button type="button" class="button-list__button">Додатки</button>
@@ -72,7 +79,9 @@
               <button type="button" class="button-list__button">Дизайн</button>
             </li>
             <li class="button-list__item">
-              <button type="button" class="button-list__button">Маркетинг</button>
+              <button type="button" class="button-list__button">
+                Маркетинг
+              </button>
             </li>
           </ul>
 
@@ -133,7 +142,9 @@
                   </p>
                 </div>
                 <div class="name-project">
-                  <h2 class="project-list__name">Ресторан <span lang="en">Seafood</span></h2>
+                  <h2 class="project-list__name">
+                    Ресторан <span lang="en">Seafood</span>
+                  </h2>
                   <p class="project-list__filter">Додаток</p>
                 </div>
               </a>
@@ -151,7 +162,9 @@
                   </p>
                 </div>
                 <div class="name-project">
-                  <h2 class="project-list__name">Проєкт <span lang="en">Prime</span></h2>
+                  <h2 class="project-list__name">
+                    Проєкт <span lang="en">Prime</span>
+                  </h2>
                   <p class="project-list__filter">Маркетинг</p>
                 </div>
               </a>
@@ -169,7 +182,9 @@
                   </p>
                 </div>
                 <div class="name-project">
-                  <h2 class="project-list__name">Проєкт <span lang="en">Boxes</span></h2>
+                  <h2 class="project-list__name">
+                    Проєкт <span lang="en">Boxes</span>
+                  </h2>
                   <p class="project-list__filter">Додаток</p>
                 </div>
               </a>
@@ -231,7 +246,9 @@
                   </p>
                 </div>
                 <div class="name-project">
-                  <h2 class="project-list__name">Проєкт <span lang="en">Lab</span></h2>
+                  <h2 class="project-list__name">
+                    Проєкт <span lang="en">Lab</span>
+                  </h2>
                   <p class="project-list__filter">Маркетинг</p>
                 </div>
               </a>
@@ -249,7 +266,9 @@
                   </p>
                 </div>
                 <div class="name-project">
-                  <h2 class="project-list__name"><span lang="en">Growing Business</span></h2>
+                  <h2 class="project-list__name">
+                    <span lang="en">Growing Business</span>
+                  </h2>
                   <p class="project-list__filter">Додаток</p>
                 </div>
               </a>
@@ -259,76 +278,88 @@
       </section>
     </main>
 
-  <footer class="footer">
-    <div class="container social-networks">
-      <div>
-        <a href="/" class="footer__logo link">
-          <span class="footer__web">Web</span>Studio
-        </a>
-        <address>
-          <ul class="address-list list">
-            <li class="address address-list__item">м. Київ, пр-т Лесі Українки, 26</li>
-            <li class="address-list__item">
-              <a href="maito:info@devstudio.com" class="address-list__link link">
-                info@devstudio.com</a>
+    <footer class="footer">
+      <div class="container social-networks">
+        <div>
+          <a href="/" class="footer__logo link">
+            <span class="footer__web">Web</span>Studio
+          </a>
+          <address>
+            <ul class="address-list list">
+              <li class="address address-list__item">
+                м. Київ, пр-т Лесі Українки, 26
+              </li>
+              <li class="address-list__item">
+                <a
+                  href="maito:info@devstudio.com"
+                  class="address-list__link link"
+                >
+                  info@devstudio.com</a
+                >
+              </li>
+              <li class="address-list__item">
+                <a href="tel:+380961111111" class="address-list__link link">
+                  +380961111111</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="social-network">
+          <p class="social-network__join">ПРИЄДНУЙТЕСЬ</p>
+          <ul class="list social-list">
+            <li class="social-list__items">
+              <a href="" class="social-list__links">
+                <svg class="social-list__icon" width="20" height="20">
+                  <use href="./img/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
             </li>
-            <li class="address-list__item">
-              <a href="tel:+380961111111" class="address-list__link link">
-                +380961111111</a>
+            <li class="social-list__items">
+              <a href="" class="social-list__links">
+                <svg class="social-list__icon" width="20" height="20">
+                  <use href="./img/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list__items">
+              <a href="" class="social-list__links">
+                <svg class="social-list__icon" width="20" height="20">
+                  <use href="./img/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list__items">
+              <a href="" class="social-list__links">
+                <svg class="social-list__icon" width="20" height="20">
+                  <use href="./img/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
             </li>
           </ul>
-        </address>
-      </div>
-      <div class="social-network">
-        <p class="social-network__join">ПРИЄДНУЙТЕСЬ</p>
-        <ul class="list social-list">
-          <li class="social-list__items">
-            <a href="" class="social-list__links">
-              <svg class="social-list__icon" width="20" height="20">
-                <use href="./img/icons.svg#icon-instagram"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social-list__items">
-            <a href="" class="social-list__links">
-              <svg class="social-list__icon" width="20" height="20">
-                <use href="./img/icons.svg#icon-twitter"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social-list__items">
-            <a href="" class="social-list__links">
-              <svg class="social-list__icon" width="20" height="20">
-                <use href="./img/icons.svg#icon-facebook"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social-list__items">
-            <a href="" class="social-list__links">
-              <svg class="social-list__icon" width="20" height="20">
-                <use href="./img/icons.svg#icon-linkedin"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
-  
-      <!-- FORM -->
-      <form class="form">
-        <div class="form-group">
-          <label class="form__label">
-            <span class="form__text">Підпишіться на розсилку</span>
-            <input type="email" name="mail" placeholder="E-mail" class="form__input" />
-          </label>
-          <button type="submit" class="form__button">
-            Підписатися
-            <svg class="form__icon" width="24" height="24">
-              <use href="./img/icons.svg#icon-send"></use>
-            </svg>
-          </button>
         </div>
-      </form>
-    </div>
-  </footer>
+
+        <!-- FORM -->
+        <form class="form">
+          <div class="form-group">
+            <label class="form__label">
+              <span class="form__text">Підпишіться на розсилку</span>
+              <input
+                type="email"
+                name="mail"
+                placeholder="E-mail"
+                class="form__input"
+              />
+            </label>
+            <button type="submit" class="form__button">
+              Підписатися
+              <svg class="form__icon" width="24" height="24">
+                <use href="./img/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
+      </div>
+    </footer>
   </body>
 </html>
